@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+          <label for="career">Carrera</label>
+          <input type="text" id="career" required>
+    
+          <label for="name">Apellidos y Nombres</label>
+          <input type="text" id="name" pattern="[A-Za-zñÑáéíóúÁÉÍ]+"
+          title="Solo letras y espacios" required>
+    
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" required>
+    
+          <label for="dob">Fecha de Nacimiento</label>
+          <input type="date" id="dob" required>
+    
+          <label for="email">Correo Electronico</label>
+          <input type="email" id="email" required>
+    
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" required>
+    
+          <label>
+            <input type="checkbox" id="terms" required>
+            Acepto los términos y condiciones
+          </label>
+    
+          <button type="button" onclick="validateForm()">Iniciar sesión</button>
+        </form>
+        <div id="error-message"></div>
+      </div>
+    
+      <script src="js/validaciones.js"></script>
+</body>
+</html>
