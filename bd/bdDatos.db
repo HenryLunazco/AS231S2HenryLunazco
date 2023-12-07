@@ -1,0 +1,16 @@
+create database bdDatos;
+
+use bdDatos;
+drop table persona;
+create table persona
+(
+	id int auto_increment primary key,
+    carrera varchar(40),
+    nombres varchar(90),
+    dni char(8),
+    fecha date,
+    correo varchar(90),
+    contrasenia varchar(2)
+);
+
+select * from persona;
